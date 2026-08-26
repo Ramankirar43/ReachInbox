@@ -29,6 +29,7 @@ aside { width: 123px; border-right: 1px solid #eef0ef; padding: 8px 5px; display
 .avatar img { width: 100%; height: 100%; object-fit: cover; }
 .compose-button { height: 28px; border: 1px solid #27bf71; border-radius: 14px; color: #04a847; font-size: 11px; display: flex; gap: 5px; justify-content: center; align-items: center; }
 aside small { color: #b0b8b3; font-size: 9px; margin: 8px 7px 0; }
+aside > .nav:nth-of-type(4) { display: none; }
 .nav { display: flex; align-items: center; gap: 7px; color: #596460; font-size: 11px; padding: 8px 7px; border-radius: 5px; text-align: left; }
 .nav b { margin-left: auto; color: #a5aaa7; font-size: 10px; font-weight: 400; }
 .nav.active { background: #e9f8ef; color: #39473f; }
