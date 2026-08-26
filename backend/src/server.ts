@@ -12,6 +12,7 @@ import { scheduleMail } from './queue';
 import './worker';
 
 const app = express();
+app.set('trust proxy', 1);
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
 app.use(cors({ origin: config.frontendUrl, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
