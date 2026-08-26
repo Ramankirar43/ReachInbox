@@ -9,7 +9,7 @@ import { randomUUID } from 'node:crypto';
 import { config } from './config';
 import { db } from './db';
 import { scheduleMail } from './queue';
-
+import './worker';
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
