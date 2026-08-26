@@ -2,6 +2,12 @@
 
 Production-oriented email scheduling monorepo: Express + TypeScript, BullMQ/Redis, PostgreSQL, Ethereal SMTP, and a React dashboard matching the supplied Outbox design.
 
+
+
+## DEPLOYED LINK - 
+https://reachinbox-1frontend.onrender.com
+
+
 ## Run locally
 
 1. Install Node 20+, Docker, and npm.
