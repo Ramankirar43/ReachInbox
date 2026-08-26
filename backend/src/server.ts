@@ -16,7 +16,12 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 *
 app.use(cors({ origin: config.frontendUrl, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
 app.use(morgan('tiny'));
-app.use(session({ secret: config.sessionSecret, resave: false, saveUninitialized: false, cookie: { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', maxAge: 86_400_000 } }));
+app.use(session({ secret: config.sessionSecret, resave: false, saveUninitialized: false,  cookie: {
+    httpOnly: true,
+    sameSite: 'none',
+    secure: true,
+    maxAge: 86_400_000
+  } }));
 app.use(passport.initialize()); app.use(passport.session());
 
 if (config.googleClientId && config.googleClientSecret) {
