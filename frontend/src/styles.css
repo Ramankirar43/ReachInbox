@@ -49,6 +49,8 @@ aside small { color: #b0b8b3; font-size: 9px; margin: 8px 7px 0; }
 .status i { height: 6px; width: 6px; border-radius: 50%; background: #f1ae55; }
 .status.sent i { background: #17ac5a; }
 .star { color: #c7cfca; }
+.delete-button { display: grid; place-items: center; color: #a7b2ab; padding: 5px; border-radius: 5px; }
+.delete-button:hover { color: #c64d49; background: #fff0ef; }
 .loading { display: flex; gap: 8px; justify-content: center; align-items: center; padding: 70px; color: #87928c; font-size: 13px; }
 .loading span { height: 12px; width: 12px; border: 2px solid #dbece2; border-top-color: #07a94b; border-radius: 50%; animation: spin .8s linear infinite; }
 .full { height: 100vh; }
